@@ -223,21 +223,22 @@ body {
     background: #bbb;/* #d0d0b4; */
     font-size: 82.5%;
     font-family: sans-serif;
-    /* margin-top: 0; */
+}
+img {
+    border: none;
+}
+a {
+    color: #edf;
 }
 
 div#wrapper {
-    /* background: #d5d5b9; */
     width: 960px;
     margin: 0 auto;
 }
 
-/* div#header, div.sidebar { */
-/*     position: fixed; */
-/* } */
 div#header {
     height: 170px;
-    background: #eb3f01; /* url(images/header.png) no-repeat center center; */
+    background: #eb3f01;
     border: 3px #fff solid;
     border-bottom: 0;
 
@@ -256,10 +257,8 @@ div#container {
 
 div#content {
     border: 3px #fff solid;
-    /* background: #fff; */
     background: #eb3f01;
     padding: 0 1em;
-    /* border-top: 0; */
 
     -moz-border-radius: 3em;
     -moz-border-radius-topright: 0;
@@ -268,14 +267,6 @@ div#content {
     -webkit-border-radius: 3em;
     -webkit-border-top-right-radius: 0;
     -webkit-border-top-left-radius: 0;
-
-    /* overflow: auto; */
-    /* position:absolute; /\* position absolutely *\/ */
-    /* z-index:3; /\* If required to cover any other divs *\/ */
-    /* top:181px; /\* a value to miss the header *\/ */
-    /* bottom:0; /\* a value to miss the footer *\/ */
-    /* left:158px; /\* a value to miss any navigation div *\/ */
-    /* right:50px; /\* this will put the scroll bar at the right of the page *\/ */
 }
 
 div#respond {
@@ -299,23 +290,12 @@ div.sidebar {
     border-right: 0;
     width: 197px;
 
-    /* width: 160px; */
-    /* float: right; */
-    /* margin: 0 1em; */
-
-    /* -moz-border-radius-topleft: 3em; */
-
-    /* -moz-border-radius-bottomright: 3em; */
     -moz-border-radius-bottomleft: 3em;
 
-    /* -webkit-border-top-left-radius: 3em; */
-
-    /* -webkit-border-bottom-right-radius: 3em; */
     -webkit-border-bottom-left-radius: 3em;
 }
 div#primary {
     margin-top: 0;
-    /* margin-top: -3px; */
 }
 
 div#footer {
@@ -338,40 +318,45 @@ img#logo {
 #header #subtitle {
     float: left;
     width: 491px;
-    padding-left: 6em;
-    padding-top: 2em;
+    padding-left: 80px;
+    padding-top: 27px;
     text-align: left;
 }
-#header #icons {
+#header #subtitle #icons {
     border-bottom: 2px #fff solid;
 }
-#header #icons img {
+#header #subtitle #icons img {
     padding: 0;
     margin-right: 3px;
 }
-#header #icons img#lollypops {
+#header #subtitle #icons img#lollypops {
     margin-right: 0;
 }
-#header #adress {
-    padding-top: 0.5em;
+#header #subtitle #adress {
+    padding-top: 6px;
     color: white;
     font-weight: bold;
     font-size: 130%;
     font-family: sans-serif;
-    text-shadow: 1px 1px 0 #992A00;
+    /* text-shadow: 1px 1px 0 #992A00; */ /* Looks funny next to non-shadowed images... */
+}
+#header #menu {
+    float: right;
+    margin: 0;
+    margin-top: 3px;
+    height: auto;
+    background-color: #992A00;
+}
+#header #menu ul { float: right; }
+#header #menu ul li {
+    width: 9em;
+    margin-top: 1px;
+    margin-bottom: -1px;
+}
+#header #menu a:hover {
+    background-color: #c91d00;
 }
 
-/* div#header a img, div#menu ul a  */img {
-    border: none;
-}
-
-/* .navigation a { */
-/*     color: #fff; */
-/*     text-decoration: none; */
-/* } */
-/* .navigation a:hover { */
-/*     text-decoration: underline; */
-/* } */
 #nav-above, #nav-below {
     background-color: #c91d00;
     padding: 0.1em 1em;
@@ -379,12 +364,9 @@ img#logo {
 #nav-below {
     margin-bottom: 1em;
 }
+
 .post {
-    /* background-color: #fee; */
-    /* border: 3px #eb3f01 solid; */
     margin-bottom: 2em;
-    /* -moz-border-radius: 3em; */
-    /* -webkit-border-radius: 3em; */
 }
 .entry-title {
     margin-top: 0;
@@ -416,9 +398,6 @@ img#logo {
 
     -webkit-border-bottom-right-radius: 2em;
     -webkit-border-bottom-left-radius: 2em;
-}
-/* .entry-meta */ a {
-    color: #edf;
 }
 .entry-content a {
     color: #00f;
