@@ -242,6 +242,7 @@ div#container {
 
 div#content {
     border: 3px #fff solid;
+    border-top: 0;
     background: #eb3f01;
     padding: 0 1em;
 
@@ -411,4 +412,20 @@ div#header {
 }
 .entry-attachment {
     text-align: center;
+}
+
+/* GIOI THIEU */
+.page div#content {
+    padding: 0;
+}
+.page h2 {
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-topleft: 0;
+
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-top-left-radius: 0;
+}
+.page .gioi_thieu {
+    border: 0;
+    margin-bottom: 25px;
 }
