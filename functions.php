@@ -460,8 +460,8 @@ function sandbox_widgets_init() {
 		'after_title'    =>   "</h3>\n"
 	);
 
-	// Table for how many? Two? This way, please.
-	register_sidebars( 2, $p );
+	// Table for how many? One? This way, please.
+	register_sidebars( 1, $p );
 
 	// Finished intializing Widgets plugin, now let's load the Sandbox default widgets; first, Sandbox search widget
 	$widget_ops = array(
