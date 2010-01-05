@@ -246,13 +246,15 @@ div#content {
     background: #eb3f01;
     padding: 0 1em;
 
-    -moz-border-radius: 3em;
-    -moz-border-radius-topright: 0;
-    -moz-border-radius-topleft: 0;
+    /* -moz-border-radius: 3em; */
+    /* -moz-border-radius-topright: 0; */
+    /* -moz-border-radius-topleft: 0; */
+    -moz-border-radius: 0 0 24px 0;
 
-    -webkit-border-radius: 3em;
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-top-left-radius: 0;
+    /* -webkit-border-radius: 3em; */
+    /* -webkit-border-top-right-radius: 0; */
+    /* -webkit-border-top-left-radius: 0; */
+    -webkit-border-radius: 0 0 24px 0;
 }
 
 div#respond {
