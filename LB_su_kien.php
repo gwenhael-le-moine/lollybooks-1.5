@@ -5,8 +5,9 @@
   // Événements
 ?>
 <?php get_header() ?>
+<?php get_sidebar() ?>
 
-<div id="container">
+<div id="container" class="page">
   <div id="content">
     <div class="entry-content su-kien">
       <div id="main-event">
@@ -40,5 +41,4 @@
   </div><!-- #content -->
 </div><!-- #container -->
 
-<?php get_sidebar() ?>
 <?php get_footer() ?>

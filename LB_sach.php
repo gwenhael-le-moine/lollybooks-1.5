@@ -5,28 +5,26 @@
   // Livres
 ?>
 <?php get_header() ?>
+<?php get_sidebar() ?>
 
-<div id="container">
+<div id="container" class="page">
   <div id="content">
 
-    <?php the_post() ?>
+    <h2 class="entry-title"><?php the_title() ?></h2>
 
     <div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
-    <!-- <h2 class="entry-title"><?php the_title() ?></h2> -->
-    <div class="entry-content sach">
-      <?php the_content() ?>
+      <div class="entry-content sach">
 
-      Mé Oué Lé Sách Koi !!
+        <?php the_content() ?>
 
-    </div>
-  </div><!-- .post -->
+      </div>
+    </div><!-- .post -->
 
-  <?php
+    <?php
      if ( get_post_custom_values('comments') ) comments_template() // Add a key/value of "comments" to enable comments on pages!
-  ?>
+    ?>
 
-</div><!-- #content -->
+  </div><!-- #content -->
 </div><!-- #container -->
 
-<?php get_sidebar() ?>
 <?php get_footer() ?>
