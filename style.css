@@ -12,7 +12,7 @@ TAGS: two columns, white, red
 
 /* --------------------------------------------------------- */
 body {
-    background: #bbb;/* #d0d0b4; */
+    background: #ccbbbb;/* #d0d0b4; */
     font-size: 82.5%;
     font-family: sans-serif;
 }
@@ -191,6 +191,7 @@ div#header {
 
 
 /******************* CSS3 et gros hacks de fölỹẹ *******************/
+/* see http://www.phpied.com/css-performance-ui-with-fewer-images/ */
 /********** SHADOWS **********/
 #header, #content, #primary {
   /* offset left, top, thickness, color with alpha */
