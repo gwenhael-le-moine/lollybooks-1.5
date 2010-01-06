@@ -78,6 +78,7 @@ div#primary {
 }
 
 div#footer {
+    width: 100%;
     padding-top: 7px; /* like bottom shadow */
     text-align: right;
 }
@@ -200,6 +201,10 @@ div#header {
     margin-bottom: 25px;
 }
 
+
+div#primary, div#content {
+    min-height: 389px;
+}
 
 
 
