@@ -65,6 +65,13 @@ div.sidebar li {
     padding-left: 0.9em;
     color: #fff;
 }
+div.sidebar li.widget a {
+    text-decoration: none;
+    border-bottom: 1px #ffffff dotted;
+}
+div.sidebar li.widget ul li {
+    padding: 0 5px 3px 0;
+}
 
 div#primary {
     margin-top: 0;
@@ -95,7 +102,9 @@ div#header {
     left: 22px;
     border: none;
 }
-#header img#logo:hover {
+#header img#logo:hover,
+.sidebar .widget li:hover,
+.sidebar .widget a:hover {
     background-color: #fc4f12;
 }
 
@@ -222,6 +231,12 @@ div#header {
 /* #header #subtitle #adress { */
 /*     text-shadow: 1px 1px 0 #992A00; /\* Looks funny next to non-shadowed images... *\/ */
 /* } */
+/* div.sidebar li.widget */ a:hover {
+    text-shadow: 1px 1px 0 #992A00;
+}
+.entry-content a:hover {
+    text-shadow: 1px 1px 0 #ddad99;
+}
 
 /********** ROUNDED CORNERS **********/
     /* -moz-border-radius: <top-left> <top-right> <bottom-right> <bottom-left> */
