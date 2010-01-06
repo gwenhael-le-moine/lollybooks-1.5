@@ -35,7 +35,7 @@
             wp_list_pages('title_li=&sort_column=menu_order&echo=1')
           ?>
           <li class="page_item">
-            <a href="<?php bloginfo('url') ?>">Blog</a>
+            <a href="<?php bloginfo('url') ?>">Hoạt động</a>
           </ul>
         </div> <!-- #menu -->
       </div><!--  #header -->
