@@ -37,11 +37,6 @@ div#content {
     border-top: 0;
     background: #eb3f01;
     padding: 0 1em;
-
-    /* -moz-border-radius: <top-left> <top-right> <bottom-right> <bottom-left> */
-    -moz-border-radius: 0 0 24px 0;
-    border-radius: 0 0 24px 0;
-    -webkit-border-bottom-right-radius: 24px;
 }
 
 div#respond {
@@ -64,15 +59,11 @@ div.sidebar {
     border-top: 0;
     border-right: 0;
     width: 197px;
-
-    -moz-border-radius: 0 0 0 24px;
-    border-radius: 0 0 0 24px;
-    -webkit-border-bottom-left-radius: 24px;
 }
 div.sidebar li {
-margin:1em 0 1em;
-padding-left: 0.9em;
-color: #fff;
+    margin:1em 0 1em;
+    padding-left: 0.9em;
+    color: #fff;
 }
 
 div#primary {
@@ -92,11 +83,6 @@ div#header {
     background: #eb3f01;
     border: 3px #fff solid;
     border-bottom: 0;
-
-    -moz-border-radius: 24px 24px 0 0;
-    border-radius: 24px 24px 0 0;
-    -webkit-border-top-left-radius: 24px;
-    -webkit-border-top-right-radius: 24px;
 }
 
 #header img#logo {
@@ -135,7 +121,6 @@ div#header {
     font-weight: bold;
     font-size: 130%;
     font-family: sans-serif;
-    /* text-shadow: 1px 1px 0 #992A00; */ /* Looks funny next to non-shadowed images... */
 }
 #header #menu {
     float: right;
@@ -185,6 +170,72 @@ div#header {
     border-left: 3px #c91d00 solid;
     border-right: 3px #c91d00 solid;
 }
+.entry-content a {
+    color: #0000ff;
+}
+.entry-attachment {
+    text-align: center;
+}
+
+/* .page */
+.page div#content {
+    padding: 0;
+}
+/* GIOI THIEU */
+.page .gioi_thieu {
+    border: 0;
+    margin-bottom: 25px;
+}
+
+
+
+
+/******************* CSS3 et gros hacks de fölỹẹ *******************/
+/********** SHADOWS **********/
+#header, #content, #primary {
+  /* offset left, top, thickness, color with alpha */
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  /* IE */
+  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='gray');
+  /* slightly different syntax for IE8 */
+  -ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='gray')";
+}
+#primary {
+  /* offset left, top, thickness, color with alpha */
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  /* IE */
+  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=5, Color='gray');
+  /* slightly different syntax for IE8 */
+  -ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=5, Color='gray')";
+}
+
+/* /\**** TEXT SHADOWS ****\/ */
+/* #header #subtitle #adress { */
+/*     text-shadow: 1px 1px 0 #992A00; /\* Looks funny next to non-shadowed images... *\/ */
+/* } */
+
+/********** ROUNDED CORNERS **********/
+    /* -moz-border-radius: <top-left> <top-right> <bottom-right> <bottom-left> */
+div#content {
+    -moz-border-radius: 0 0 24px 0;
+    border-radius: 0 0 24px 0;
+    -webkit-border-bottom-right-radius: 24px;
+}
+div.sidebar {
+    -moz-border-radius: 0 0 0 24px;
+    border-radius: 0 0 0 24px;
+    -webkit-border-bottom-left-radius: 24px;
+}
+div#header {
+    -moz-border-radius: 24px 24px 0 0;
+    border-radius: 24px 24px 0 0;
+    -webkit-border-top-left-radius: 24px;
+    -webkit-border-top-right-radius: 24px;
+}
 .entry-title, #nav-below, #comments-list {
     -moz-border-radius: 12px 12px 0 0;
     border-radius: 12px 12px 0 0;
@@ -197,24 +248,17 @@ div#header {
     -webkit-border-bottom-left-radius: 18px;
     -webkit-border-bottom-right-radius: 18px;
 }
-.entry-content a {
-    color: #0000ff;
-}
-.entry-attachment {
-    text-align: center;
-}
-
-/* .page */
-.page div#content {
-    padding: 0;
-}
 .page h2 {
     -moz-border-radius: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
 }
-/* GIOI THIEU */
-.page .gioi_thieu {
-    border: 0;
-    margin-bottom: 25px;
-}
+
+/* /\********** GRADIENTS **********\/ */
+/* .gradient { */
+/*     background-image: -moz-linear-gradient(top, #641d1c, #f00); */
+/*     background-image: -webkit-gradient(linear, left top, left bottom, from(#641d1c), to(#f00)); */
+/*     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff641d1c,endColorstr=#ffff0000); */
+/*     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff641d1c,endColorstr=#ffff0000)"; */
+/* } */
+
