@@ -1,0 +1,32 @@
+* Active
+** Prod
+*** Akismet
+*** Email Obfuscator
+*** Maintenance Mode
+*** Piwik Analytics
+*** RSS Cloud
+*** SexyBookmarks
+*** Transpose
+*** WordPress.com Stats
+*** WordPress Beta Tester
+*** wp-cache
+*** WP-IE6Update
+** Future
+*** WP Events Calendar
+*** Wordpress Media Flickr
+*** Flickr Gallery
+*** Lightbox Gallery
+
+* Inactive
+** Prod
+*** Hello Dolly
+*** Lightbox 2
+*** WP-DBManager
+** Future
+*** NextGEN Gallery
+*** WordPress Gallery Slideshow
+*** Lightbox 2
+*** All in One SEO Pack
+
+* To check
+** WP-Polls
