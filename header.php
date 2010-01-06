@@ -31,16 +31,16 @@
       </div>
       <div id="menu">
         <ul>
-      <?php
-        wp_list_pages('title_li=&sort_column=menu_order&echo=1')
-      ?>
-      <li class="page_item">
-        <a href="<?php bloginfo('url') ?>">Blog</a>
-        </ul>
-      </div> <!-- #menu -->
-    </div><!--  #header -->
+          <?php
+            wp_list_pages('title_li=&sort_column=menu_order&echo=1')
+          ?>
+          <li class="page_item">
+            <a href="<?php bloginfo('url') ?>">Blog</a>
+          </ul>
+        </div> <!-- #menu -->
+      </div><!--  #header -->
 
-    <div id="access">
+      <div id="access">
         <!-- <div class="skip-link"><a href="#content" title="<?php _e( 'Skip to content', 'sandbox' ) ?>"><?php _e( 'Skip to content', 'sandbox' ) ?></a></div> -->
         <!-- <?php sandbox_globalnav() ?> -->
-    </div><!-- #access -->
+      </div><!-- #access -->
