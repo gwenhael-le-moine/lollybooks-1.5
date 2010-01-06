@@ -226,20 +226,20 @@ div#header {
 /********** ROUNDED CORNERS **********/
     /* -moz-border-radius: <top-left> <top-right> <bottom-right> <bottom-left> */
 div#content {
-    -moz-border-radius: 0 0 24px 0;
-    border-radius: 0 0 24px 0;
-    -webkit-border-bottom-right-radius: 24px;
+    -moz-border-radius: 0 0 40px 0;
+    border-radius: 0 0 40px 0;
+    -webkit-border-bottom-right-radius: 40px;
 }
 div.sidebar {
-    -moz-border-radius: 0 0 0 24px;
-    border-radius: 0 0 0 24px;
-    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-radius: 0 0 0 40px;
+    border-radius: 0 0 0 40px;
+    -webkit-border-bottom-left-radius: 40px;
 }
 div#header {
-    -moz-border-radius: 24px 24px 0 0;
-    border-radius: 24px 24px 0 0;
-    -webkit-border-top-left-radius: 24px;
-    -webkit-border-top-right-radius: 24px;
+    -moz-border-radius: 40px 40px 0 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-border-top-left-radius: 40px;
+    -webkit-border-top-right-radius: 40px;
 }
 .entry-title, #nav-below, #comments-list {
     -moz-border-radius: 12px 12px 0 0;
