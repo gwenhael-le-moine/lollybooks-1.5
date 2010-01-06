@@ -7,7 +7,7 @@
 <?php get_header() ?>
 <?php get_sidebar() ?>
 
-<div id="container" class="page">
+<div id="container">
   <div id="content">
 
       <div id="main-event">
