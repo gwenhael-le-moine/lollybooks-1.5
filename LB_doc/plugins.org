@@ -2,6 +2,7 @@
 ** Prod
 *** Akismet
 *** Email Obfuscator
+*** Google XML Sitemaps
 *** Maintenance Mode
 *** Piwik Analytics
 *** RSS Cloud
