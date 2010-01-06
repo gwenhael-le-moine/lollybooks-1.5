@@ -29,8 +29,15 @@
         </div> <!-- div#icons -->
         <div id="adress">29 Tô Hiến Thành, Hà Nội, Việt Nam</div>
       </div>
-
-      <?php sandbox_globalnav() ?>
+      <div id="menu">
+        <ul>
+      <?php
+        wp_list_pages('title_li=&sort_column=menu_order&echo=1')
+      ?>
+      <li class="page_item">
+        <a href="<?php bloginfo('url') ?>">Blog</a>
+        </ul>
+      </div> <!-- #menu -->
     </div><!--  #header -->
 
     <div id="access">
