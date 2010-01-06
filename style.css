@@ -249,7 +249,7 @@ div#content {
     /* -moz-border-radius: <top-left> <top-right> <bottom-right> <bottom-left> */
     -moz-border-radius: 0 0 24px 0;
 
-    -webkit-border-radius: 0 0 24px 0;
+    -webkit-border-bottom-right-radius: 24px;
 }
 
 div#respond {
@@ -275,7 +275,7 @@ div.sidebar {
 
     -moz-border-radius: 0 0 0 24px;
 
-    -webkit-border-radius: 0 0 0 24px;
+    -webkit-border-bottom-left-radius: 24px;
 }
 div#primary {
     margin-top: 0;
@@ -297,7 +297,8 @@ div#header {
 
     -moz-border-radius: 24px 24px 0 0;
 
-    -webkit-border-radius: 24px 24px 0 0;
+    -webkit-border-top-left-radius: 24px;
+    -webkit-border-top-right-radius: 24px;
 }
 
 #header img#logo {
@@ -389,12 +390,14 @@ div#header {
 .entry-title, #nav-below, #comments-list {
     -moz-border-radius: 12px 12px 0 0;
 
-    -webkit-border-radius: 12px 12px 0 0;
+    -webkit-border-top-left-radius: 12px;
+    -webkit-border-top-right-radius: 12px;
 }
 .entry-meta, #nav-above, #nav-below, #comments-list {
     -moz-border-radius: 0 0 18px 18px;
 
-    -webkit-border-radius: 0 0 18px 18px;
+    -webkit-border-bottom-left-radius: 18px;
+    -webkit-border-bottom-right-radius: 18px;
 }
 .entry-content a {
     color: #0000ff;
