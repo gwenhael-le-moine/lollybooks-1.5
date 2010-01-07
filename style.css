@@ -282,3 +282,58 @@ div#header {
 /*     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff641d1c,endColorstr=#ffff0000)"; */
 /* } */
 
+
+
+
+
+
+
+
+/* /\******** ALTERNATIVE: fixed header and sidebar ********\/ */
+/* body { */
+/*     margin: 0; */
+/*     padding: 0; */
+/*     } */
+/* div#fake_background { */
+/*     background: #ccbbbb; */
+/*     width: 100%; */
+/*     height: 181px; */
+/*     z-index: 2; */
+/*     position: fixed; */
+/*     top: 0; */
+/*     } */
+/* div#wrapper { */
+/*     margin-top: 8px; */
+/*     } */
+/* div#header, div#primary { */
+/*     position: fixed; */
+/*     z-index: 2; */
+/*     } */
+/* div#content { */
+/*     position: relative; */
+/*     top: 173px; */
+/*     z-index: 1; */
+/*     width: 737px; */
+/*     border-left: 0; */
+/*     border-top: 0; */
+/*     } */
+/* div#header { */
+/*     width: 960px; */
+/*     } */
+/* div#primary { */
+/*     top: 181px; */
+/*     } */
+/* /\* #footer { *\/ */
+/* /\*     position: relative; *\/ */
+/* /\*     /\\* bottom: 0; *\\/ *\/ */
+/* /\*     } *\/ */
+/* div#primary { */
+/*   /\* offset left, top, thickness, color with alpha *\/ */
+/*   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+/*   -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+/*   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
+/*   /\* IE *\/ */
+/*   filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='gray'); */
+/*   /\* slightly different syntax for IE8 *\/ */
+/*   -ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=5, OffY=5, Color='gray')"; */
+/* } */

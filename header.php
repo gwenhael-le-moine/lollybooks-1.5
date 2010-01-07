@@ -13,6 +13,7 @@
 </head>
 
 <body class="<?php sandbox_body_class() ?>">
+<div id="fake_background"></div>
 
   <div id="wrapper" class="hfeed">
 
