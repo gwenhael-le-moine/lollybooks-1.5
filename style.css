@@ -34,7 +34,7 @@ div#container {
 
 div#content {
     border: 3px #fff solid;
-    border-top: 0;
+    /* border-top: 0; */
     background: #eb3f01;
     padding: 0 1em;
 }
@@ -65,12 +65,21 @@ div.sidebar li {
     padding-left: 0.9em;
     color: #fff;
 }
+div.sidebar li.widget a {
+    text-decoration: none;
+    border-bottom: 1px #ffffff dotted;
+}
+div.sidebar li.widget ul li {
+    padding: 0 5px 3px 0;
+}
 
 div#primary {
     margin-top: 0;
 }
 
 div#footer {
+    width: 100%;
+    padding-top: 7px; /* like bottom shadow */
     text-align: right;
 }
 #copyright {
@@ -90,19 +99,20 @@ div#header {
     height: 92px;
     float: left;
     position: relative;
-    top: 24px;
+    top: 14px;
     left: 22px;
     border: none;
 }
-#header a:hover {
+#header img#logo:hover,
+.sidebar .widget li:hover,
+.sidebar .widget a:hover {
     background-color: #fc4f12;
 }
 
 #header #subtitle {
     float: left;
     width: 491px;
-    padding-left: 80px;
-    padding-top: 27px;
+    padding: 17px 0 12px 94px;
     text-align: left;
 }
 #header #subtitle #icons {
@@ -125,18 +135,22 @@ div#header {
 #header #menu {
     float: right;
     margin: 0;
-    margin-top: 3px;
-    height: auto;
+    /* padding-top: 3px; */
+    height: 21px;
     background-color: #992A00;
 }
-#header #menu ul { float: right; }
-#header #menu ul li.page_item {
+#header #menu ul {
+    float: right;
+    height: 100%;
+}
+#header #menu ul li/* .page_item */ {
     width: 9em;
-    padding-top: 2px;
-    margin-bottom: -2px;
+    height: 21px; /* like #menu */
+    /* padding-top: 2px; */
+    /* margin-bottom: -2px; */
 }
 #header #menu ul li.current_page_item,
-#header #menu ul li.page_item:hover,
+#header #menu ul li/* .page_item */:hover,
 #header #menu a:hover {
     background-color: #c91d00;
 }
@@ -188,6 +202,10 @@ div#header {
 }
 
 
+div#primary, div#content {
+    min-height: 389px;
+}
+
 
 
 /******************* CSS3 et gros hacks de fölỹẹ *******************/
@@ -218,24 +236,30 @@ div#header {
 /* #header #subtitle #adress { */
 /*     text-shadow: 1px 1px 0 #992A00; /\* Looks funny next to non-shadowed images... *\/ */
 /* } */
+/* div.sidebar li.widget */ a:hover {
+    text-shadow: 1px 1px 0 #992A00;
+}
+.entry-content a:hover {
+    text-shadow: 1px 1px 0 #ddad99;
+}
 
 /********** ROUNDED CORNERS **********/
     /* -moz-border-radius: <top-left> <top-right> <bottom-right> <bottom-left> */
 div#content {
-    -moz-border-radius: 0 0 24px 0;
-    border-radius: 0 0 24px 0;
-    -webkit-border-bottom-right-radius: 24px;
+    -moz-border-radius: 0 0 40px 0;
+    border-radius: 0 0 40px 0;
+    -webkit-border-bottom-right-radius: 40px;
 }
 div.sidebar {
-    -moz-border-radius: 0 0 0 24px;
-    border-radius: 0 0 0 24px;
-    -webkit-border-bottom-left-radius: 24px;
+    -moz-border-radius: 0 0 0 40px;
+    border-radius: 0 0 0 40px;
+    -webkit-border-bottom-left-radius: 40px;
 }
 div#header {
-    -moz-border-radius: 24px 24px 0 0;
-    border-radius: 24px 24px 0 0;
-    -webkit-border-top-left-radius: 24px;
-    -webkit-border-top-right-radius: 24px;
+    -moz-border-radius: 40px 40px 0 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-border-top-left-radius: 40px;
+    -webkit-border-top-right-radius: 40px;
 }
 .entry-title, #nav-below, #comments-list {
     -moz-border-radius: 12px 12px 0 0;
