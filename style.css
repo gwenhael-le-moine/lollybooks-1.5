@@ -112,7 +112,8 @@ div#header {
 #header #subtitle {
     float: left;
     width: 491px;
-    padding: 17px 0 12px 94px;
+    height: 122px;
+    padding: 17px 0 11px 94px;
     text-align: left;
 }
 #header #subtitle #icons {
@@ -135,19 +136,13 @@ div#header {
 #header #menu {
     float: right;
     margin: 0;
-    /* padding-top: 3px; */
-    height: 21px;
     background-color: #992A00;
 }
 #header #menu ul {
     float: right;
-    height: 100%;
 }
 #header #menu ul li/* .page_item */ {
     width: 9em;
-    height: 21px; /* like #menu */
-    /* padding-top: 2px; */
-    /* margin-bottom: -2px; */
 }
 #header #menu ul li.current_page_item,
 #header #menu ul li/* .page_item */:hover,
