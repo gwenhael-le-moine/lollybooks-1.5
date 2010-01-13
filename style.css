@@ -139,10 +139,14 @@ div#header {
     background-color: #992A00;
 }
 #header #menu ul {
-    float: right;
+    /* float: right; */
+    padding-left: 197px;
+    font-size: 115%;
+    font-weight: bold;
 }
 #header #menu ul li/* .page_item */ {
     width: 9em;
+    font-size: 140%;
 }
 #header #menu ul li.current_page_item,
 #header #menu ul li/* .page_item */:hover,
@@ -187,15 +191,23 @@ div#header {
 }
 
 /* .page */
-.page div#content {
-    padding: 0;
-}
+/* .page div#content { */
+/*     padding: 0; */
+/* } */
 /* GIOI THIEU */
 .page .gioi_thieu {
     border: 0;
     margin-bottom: 25px;
 }
 
+/* NEWPAGE CLUB */
+.newpage #headlines {
+    float: right;
+    /* margin-top: -1em; */
+}
+.newpage #first_posts {
+    width: 400px;
+}
 
 div#primary, div#content {
     min-height: 389px;
@@ -268,11 +280,11 @@ div#header {
     -webkit-border-bottom-left-radius: 18px;
     -webkit-border-bottom-right-radius: 18px;
 }
-.page h2 {
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-}
+/* .page h2 { */
+/*     -moz-border-radius: 0; */
+/*     border-radius: 0; */
+/*     -webkit-border-radius: 0; */
+/* } */
 
 /* /\********** GRADIENTS **********\/ */
 /* .gradient { */
