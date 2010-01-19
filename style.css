@@ -266,9 +266,10 @@ div#header {
     -webkit-border-top-left-radius: 12px;
     -webkit-border-top-right-radius: 12px;
 }
-.entry-meta, #nav-above, #nav-below, #comments-list {
-    -moz-border-radius: 0 0 18px 18px;
-    border-radius: 0 0 18px 18px;
+#menu, .entry-meta, #nav-above, #nav-below, #comments-list {
+    -moz-border-radius: 0 18px 18px;
+    border-radius: 0 18px 18px;
+    -webkit-border-top-right-radius: 18px;
     -webkit-border-bottom-left-radius: 18px;
     -webkit-border-bottom-right-radius: 18px;
 }
