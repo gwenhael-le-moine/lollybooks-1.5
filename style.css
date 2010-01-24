@@ -147,6 +147,9 @@ div#header {
 #header #menu ul li/* .page_item */ {
     width: 9em;
 }
+#header #menu ul li ul {
+    padding-left: 0;
+}
 #header #menu ul li.current_page_item,
 #header #menu ul li/* .page_item */:hover,
 #header #menu a:hover {
