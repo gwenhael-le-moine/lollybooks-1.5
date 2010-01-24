@@ -34,7 +34,7 @@ div#container {
 
 div#content {
     position: absolute;
-    width: 726px;
+    width: 728px;
     border: 3px #fff solid;
     /* border-top: 0; */
     background: #eb3f01;
@@ -213,7 +213,7 @@ div#header {
 /* } */
 
 /* NEWPAGE CONTEST */
-.page #content #submissions /* .sidebar */ {
+/* .page */ #content #submissions /* .sidebar */ {
     float: right;
     /* border-right: 3px white solid; */
     border: 0;
@@ -222,9 +222,9 @@ div#header {
     width: 37%;
     background-color: #c91d00;
     }
-.page #content #submissions li {
+/* .page */ #content #submissions li {
     }
-.page #intro {
+/* .page */ #intro {
     float: left;
     width: 57%;
     }
