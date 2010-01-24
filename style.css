@@ -219,14 +219,15 @@ div#header {
     border: 0;
     margin: 0;
     padding-bottom: 10px;
-    width: 37%;
+    width: 25%;
     background-color: #c91d00;
+    font-size: 1.3em;
     }
 /* .page */ #content #submissions li {
     }
 /* .page */ #intro {
     float: left;
-    width: 57%;
+    width: 69%;
     }
 
 
