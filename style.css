@@ -33,6 +33,8 @@ div#container {
 }
 
 div#content {
+    position: absolute;
+    width: 726px;
     border: 3px #fff solid;
     /* border-top: 0; */
     background: #eb3f01;
@@ -206,9 +208,9 @@ div#header {
     margin-bottom: 25px;
 }
 
-div#primary, div#content {
-    min-height: 389px;
-}
+/* div#primary, div#content { */
+/*     min-height: 389px; */
+/* } */
 
 /* NEWPAGE CONTEST */
 .page #content #submissions /* .sidebar */ {
