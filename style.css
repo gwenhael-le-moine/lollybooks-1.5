@@ -138,7 +138,7 @@ div#header {
 #header #menu {
     float: right;
     margin: 0;
-    background-color: #992A00;
+    background: none;
 }
 #header #menu ul {
     /* float: right; */
@@ -147,7 +147,10 @@ div#header {
     font-weight: bold;
 }
 #header #menu ul li/* .page_item */ {
-    width: 9em;
+    width: 8em;
+    border-left: 1px #eb3f01 solid;
+    border-right: 1px #eb3f01 solid;
+    background-color: #992A00;
 }
 #header #menu ul li ul {
     padding-left: 0;
@@ -221,7 +224,6 @@ div#header {
     padding-bottom: 10px;
     width: 25%;
     background-color: #c91d00;
-    font-size: 1.3em;
     }
 /* .page */ #content #submissions li {
     }
@@ -302,6 +304,12 @@ div#header {
     border-radius: 0 0 18px 18px;
     -webkit-border-bottom-left-radius: 18px;
     -webkit-border-bottom-right-radius: 18px;
+    }
+#header #menu ul li {
+    -moz-border-radius: 4px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
     }
 /* .page h2 { */
 /*     -moz-border-radius: 0; */
