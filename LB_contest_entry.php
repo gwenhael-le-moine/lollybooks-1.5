@@ -9,18 +9,23 @@
   <div id="content">
 
     <div id="nav-above" class="navigation">
-    /* TODO: link back to contest's page */
       <div class="nav-previous"><a href="javascript:history.back(  );">Back to Contest's page</a></div>
-      /* <div class="nav-previous"><?php next_posts_link(__( '<span class="meta-nav">&laquo;</span> Older posts', 'sandbox' )) ?></div> */
-      /* <div class="nav-next"><?php previous_posts_link(__( 'Newer posts <span class="meta-nav">&raquo;</span>', 'sandbox' )) ?></div> */
     </div>
 
 
-    <h2 class="entry-title"><?php the_title() ?></h2>
+			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
+				<h2 class="entry-title"><?php the_title() ?></h2>
+				<div class="entry-content">
+<?php the_content() ?>
 
-    <div id="intro">
-    <?php the_content() ?>
-    </div>
+<?php wp_link_pages('before=<div class="page-link">' . __( 'Pages:', 'sandbox' ) . '&after=</div>') ?>
+
+<?php edit_post_link( __( 'Edit', 'sandbox' ), '<span class="edit-link">', '</span>' ) ?>
+
+				</div>
+			</div><!-- .post -->
+
+<?php if ( get_post_custom_values('comments') ) comments_template() // Add a key+value of "comments" to enable comments on this page ?>
 
   </div><!-- #content -->
 </div><!-- #container -->

@@ -194,9 +194,12 @@ div#header {
 
 /* .page */
 .page div#content {
-    padding: 0;
+    /* padding: 0; */
     padding-bottom: 33px;
 }
+.page div#content h2 {
+    margin-top: 20px;
+    }
 /* GIOI THIEU */
 .page .gioi_thieu {
     border: 0;
@@ -208,11 +211,20 @@ div#primary, div#content {
 }
 
 /* NEWPAGE CONTEST */
-.page .sidebar {
+.page #content #submissions /* .sidebar */ {
     float: right;
+    /* border-right: 3px white solid; */
+    border: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    width: 37%;
+    background-color: #c91d00;
+    }
+.page #content #submissions li {
     }
 .page #intro {
     float: left;
+    width: 57%;
     }
 
 
@@ -282,11 +294,17 @@ div#header {
     -webkit-border-bottom-left-radius: 18px;
     -webkit-border-bottom-right-radius: 18px;
 }
-.page h2 {
-    -moz-border-radius: 0;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-}
+.page #content #submissions {
+    -moz-border-radius: 0 0 18px 18px;
+    border-radius: 0 0 18px 18px;
+    -webkit-border-bottom-left-radius: 18px;
+    -webkit-border-bottom-right-radius: 18px;
+    }
+/* .page h2 { */
+/*     -moz-border-radius: 0; */
+/*     border-radius: 0; */
+/*     -webkit-border-radius: 0; */
+/* } */
 
 /* /\********** GRADIENTS **********\/ */
 /* .gradient { */

@@ -18,11 +18,11 @@
     $children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');
     if ($children) {
     ?>
-    <div  class="sidebar">
+    <!-- div class="sidebar" -->
        <ul id="submissions">
           <?php echo $children; ?>
        </ul>
-    </div>
+    <!-- /div -->
     <?php
     }
     ?>
