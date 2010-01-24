@@ -60,16 +60,16 @@ div.sidebar {
     border-right: 0;
     width: 197px;
 }
-div.sidebar li {
+.sidebar li {
     margin:1em 0 1em;
     padding-left: 0.9em;
     color: #fff;
 }
-div.sidebar li.widget a {
+.sidebar li.widget a {
     text-decoration: none;
     border-bottom: 1px #ffffff dotted;
 }
-div.sidebar li.widget ul li {
+.sidebar li.widget ul li {
     padding: 0 5px 3px 0;
 }
 
@@ -203,11 +203,17 @@ div#header {
     margin-bottom: 25px;
 }
 
-
 div#primary, div#content {
     min-height: 389px;
 }
 
+/* NEWPAGE CONTEST */
+.page .sidebar {
+    float: right;
+    }
+.page #intro {
+    float: left;
+    }
 
 
 /******************* CSS3 et gros hacks de fölỹẹ *******************/
@@ -238,7 +244,7 @@ div#primary, div#content {
 /* #header #subtitle #adress { */
 /*     text-shadow: 1px 1px 0 #992A00; /\* Looks funny next to non-shadowed images... *\/ */
 /* } */
-/* div.sidebar li.widget */ a:hover {
+/* .sidebar li.widget */ a:hover {
     text-shadow: 1px 1px 0 #992A00;
 }
 .entry-content a:hover {
@@ -252,7 +258,7 @@ div#content, .entry-content {
     border-radius: 0 0 40px 0;
     -webkit-border-bottom-right-radius: 40px;
 }
-div.sidebar {
+.sidebar {
     -moz-border-radius: 0 0 0 40px;
     border-radius: 0 0 0 40px;
     -webkit-border-bottom-left-radius: 40px;
