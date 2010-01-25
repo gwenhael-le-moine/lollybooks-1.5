@@ -15,7 +15,7 @@
     </div>
 
     <?php
-    $children = wp_list_pages('title_li=&child_of='.$post->ID.'&echo=0');
+    $children = wp_list_pages('sort_column=post_date&sort_order=DESC&title_li=&child_of='.$post->ID.'&echo=0');
     if ($children) {
     ?>
     <!-- div class="sidebar" -->
