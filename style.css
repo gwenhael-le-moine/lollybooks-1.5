@@ -229,7 +229,9 @@ div#header {
     }
 /* .page */ #intro {
     float: left;
-    width: 69%;
+    width: 67%;
+    background-color: #ffaf88;
+    padding: 0.5em;
     }
 
 
@@ -299,7 +301,7 @@ div#header {
     -webkit-border-bottom-left-radius: 18px;
     -webkit-border-bottom-right-radius: 18px;
 }
-.page #content #submissions {
+#intro, .page #content #submissions {
     -moz-border-radius: 0 0 18px 18px;
     border-radius: 0 0 18px 18px;
     -webkit-border-bottom-left-radius: 18px;
