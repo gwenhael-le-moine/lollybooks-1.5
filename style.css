@@ -226,8 +226,10 @@ div#header {
     background-color: #c91d00;
     }
 /* .page */ #content #submissions li {
+    padding-top: 0.25em;
+    font-size: 1.2em;
     }
-/* .page */ #intro {
+/* .page */ #content #intro {
     float: left;
     width: 67%;
     background-color: #ffaf88;
@@ -301,7 +303,7 @@ div#header {
     -webkit-border-bottom-left-radius: 18px;
     -webkit-border-bottom-right-radius: 18px;
 }
-#intro, .page #content #submissions {
+#content #intro, /* .page */ #content #submissions {
     -moz-border-radius: 0 0 18px 18px;
     border-radius: 0 0 18px 18px;
     -webkit-border-bottom-left-radius: 18px;
