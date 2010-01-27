@@ -228,6 +228,7 @@ div#header {
 /* .page */ #content #submissions li {
     padding-top: 0.25em;
     font-size: 1.2em;
+    color: #fff; /* bullet */
     }
 /* .page */ #content #intro {
     float: left;
