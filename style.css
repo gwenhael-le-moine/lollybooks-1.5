@@ -22,7 +22,8 @@ img {
 a {
     color: #edf;
 }
-a[href^="http://facebook.com"] {
+a[href^="http://facebook.com"],
+a[href^="http://www.facebook.com"] {
     padding-left: 20px;
     background : url(images/facebook_16.png) no-repeat left center;
     }
