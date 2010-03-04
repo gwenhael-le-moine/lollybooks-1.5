@@ -27,6 +27,7 @@ a[href^="http://www.facebook.com"] {
     padding-left: 20px;
     background : url(images/facebook_16.png) no-repeat left center;
     }
+li.sexy-facebook a { padding-left; 0; background: none; }
 
 div#wrapper {
     width: 960px;
