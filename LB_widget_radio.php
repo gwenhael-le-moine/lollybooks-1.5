@@ -1,3 +1,6 @@
+# http://wpengineer.com/wordpress-built-a-widget/
+# http://codex.wordpress.org/Function_Reference/get_children
+
 class LB_Radio_Widget extends WP_Widget {
 	function LB_Radio_Widget() {
 		$widget_ops = array('classname' => 'widget_lb_radio', 'description' => 'Play Lollybooks radio from the sidebar' );
