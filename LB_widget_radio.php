@@ -1,5 +1,5 @@
 # http://wpengineer.com/wordpress-built-a-widget/
-# http://codex.wordpress.org/Function_Reference/get_children
+# http://codex.wordpress.org/Function_Reference/get_children 
 
 class LB_Radio_Widget extends WP_Widget {
 	function LB_Radio_Widget() {
@@ -14,7 +14,7 @@ class LB_Radio_Widget extends WP_Widget {
 		$title = empty($instance['title']) ? '&nbsp;' : apply_filters('widget_title', $instance['title']);
  
 		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
-        $mp3s =& get_children( 'post_type=attachment&post_mime_type=audio&post_parent=null' );
+        $mp3s =& get_children( 'post_type=attachment&post_mime_type=audio/mpeg&post_parent=null' );
         
         $counter=0;
         foreach( (array) $mp3s as $attachment_id => $attachment )
