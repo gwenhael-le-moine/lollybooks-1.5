@@ -20,6 +20,9 @@
     <div id="header">
       <a href="<?php bloginfo('url') ?>"><img src="<?php bloginfo('template_directory') ?>/images/logo.png" id="logo" alt="Lollybooks Café" /></a>
 
+
+       <?php include (TEMPLATEPATH . '/LB_radio.php'); ?>
+       
       <div id="subtitle">
         <div id="icons">
           <img id="cafe" src="<?php bloginfo('template_directory') ?>/images/cafe.png" alt="Café" />

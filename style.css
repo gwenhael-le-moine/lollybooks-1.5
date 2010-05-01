@@ -39,10 +39,16 @@ div#container {
 }
 
 div#content {
-    position: absolute;
+    /* position: absolute; */
     width: 728px;
     border: 3px #fff solid;
     /* border-top: 0; */
+    background: #eb3f01;
+    padding: 0 1em;
+}
+
+div#partners {
+    border: 3px #fff solid;
     background: #eb3f01;
     padding: 0 1em;
 }
@@ -84,6 +90,14 @@ div.sidebar {
 div#primary {
     margin-top: 0;
 }
+
+div#partners {
+    float: left;
+    width: 97%;
+    height: 160px;
+    padding: 10px;
+    margin: 10px;
+    }
 
 div#footer {
     width: 100%;
@@ -247,7 +261,7 @@ div#header {
 /******************* CSS3 et gros hacks de fölỹẹ *******************/
 /* see http://www.phpied.com/css-performance-ui-with-fewer-images/ */
 /********** SHADOWS **********/
-#header, #content, #primary {
+#header, #content, #primary, #partners {
   /* offset left, top, thickness, color with alpha */
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -296,6 +310,13 @@ div#header {
     border-radius: 40px 40px 0 0;
     -webkit-border-top-left-radius: 40px;
     -webkit-border-top-right-radius: 40px;
+}
+div#partners {
+    -moz-border-radius: 0 40px 40px 40px;
+    border-radius: 0 40px 40px 40px;
+    -webkit-border-bottom-left-radius: 40px;
+    -webkit-border-top-right-radius: 40px;
+    -webkit-border-bottom-right-radius: 40px;
 }
 .entry-title, #nav-below, #comments-list {
     -moz-border-radius: 12px 12px 0 0;

@@ -452,16 +452,21 @@ function sandbox_widgets_init() {
 	if ( !function_exists('register_sidebars') )
 		return;
 
-	// Formats the Sandbox widgets, adding readability-improving whitespace
-	$p = array(
+	register_sidebar( array(
+                         'name' => "primary",
 		'before_widget'  =>   "\n\t\t\t" . '<li id="%1$s" class="widget %2$s">',
 		'after_widget'   =>   "\n\t\t\t</li>\n",
 		'before_title'   =>   "\n\t\t\t\t". '<h3 class="widgettitle">',
 		'after_title'    =>   "</h3>\n"
-	);
+	) );
 
-	// Table for how many? One? This way, please.
-	register_sidebars( 1, $p );
+	register_sidebar( array(
+                         'name' => "partners",
+		'before_widget'  =>   "\n\t\t\t" . '<li id="%1$s" class="widget %2$s">',
+		'after_widget'   =>   "\n\t\t\t</li>\n",
+		'before_title'   =>   "\n\t\t\t\t". '<h3 class="widgettitle">',
+		'after_title'    =>   "</h3>\n"
+	) );
 
 	// Finished intializing Widgets plugin, now let's load the Sandbox default widgets; first, Sandbox search widget
 	$widget_ops = array(
@@ -497,7 +502,7 @@ load_theme_textdomain('sandbox');
 add_action( 'init', 'sandbox_widgets_init' );
 
 // Registers our function to filter default gallery shortcode
-add_filter( 'post_gallery', 'sandbox_gallery', $attr );
+//add_filter( 'post_gallery', 'sandbox_gallery', $attr );
 
 // Adds filters for the description/meta content in archives.php
 add_filter( 'archive_meta', 'wptexturize' );

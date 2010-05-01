@@ -1,5 +1,14 @@
-# http://wpengineer.com/wordpress-built-a-widget/
-# http://codex.wordpress.org/Function_Reference/get_children 
+<?php
+/* http://wpengineer.com/wordpress-built-a-widget/ */
+ /* http://codex.wordpress.org/Function_Reference/get_children  */
+/*
+Plugin Name: Lollybooks Radio
+Plugin URI: http://lollybooks.com/
+Description: Widgets for Lollybooks Radio
+Author: Gwenhael Le Moine
+Version: 1
+Author URI: http://cycojesus.free.fr/
+*/
 
 class LB_Radio_Widget extends WP_Widget {
 	function LB_Radio_Widget() {
@@ -40,4 +49,5 @@ class LB_Radio_Widget extends WP_Widget {
 <?php
 	}
 }
-register_widget('My_RSS_Widget');
+register_widget('LB_Radio_Widget');
+?>
