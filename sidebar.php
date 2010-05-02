@@ -30,9 +30,9 @@
 		</ul>
 	</div><!-- #primary .sidebar -->
 
-	<div id="partners">
+	<!-- div id="partners">
 		<ul class="xoxo">
 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar(2) ) : // begin partners sidebar widgets ?>
 <?php endif; // end partners sidebar widgets  ?>
 		</ul>
-	</div><!-- #partners -->
+	</div --><!-- #partners -->
