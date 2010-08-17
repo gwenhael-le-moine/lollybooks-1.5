@@ -94,10 +94,17 @@ div#primary {
 
 div#partners {
     float: left;
-    width: 97%;
-    height: 160px;
+    width: 930px;
     padding: 10px;
     margin: 10px;
+    }
+div#partners div#partners_logos {
+	margin: 0 auto;
+	width: 900px
+}
+div#partners a img {
+    float: left;
+    margin: 3px;
     }
 
 div#footer {
