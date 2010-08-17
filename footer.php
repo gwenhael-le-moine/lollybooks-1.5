@@ -4,7 +4,7 @@
           <!-- h1>Our partners</h1 -->
           <div id="partners_logos">
           <?php 
-          $media_items = get_attachments_by_media_tags( 'media_tags=partner' );
+          $media_items = get_attachments_by_media_tags( 'media_tags=partner&orderby=title' );
           if ($media_items) {
              foreach ($media_items as $media_item) {
                 echo '<a href="' . $media_item->post_excerpt . '">';
