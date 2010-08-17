@@ -1,7 +1,7 @@
 
     <div id="footer">
-        <div id="partners" style="display:none;">
-          <!-- h1>Our partners</h1 -->
+        <div id="partners">
+          <h1>Our partners</h1>
           <div id="partners_logos">
           <?php 
           $media_items = get_attachments_by_media_tags( 'media_tags=partner&orderby=title&order=ASC' );
