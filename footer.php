@@ -4,11 +4,11 @@
           <!-- h1>Our partners</h1 -->
           <div id="partners_logos">
           <?php 
-          $media_items = get_attachments_by_media_tags( 'media_tags=partner&orderby=title' );
+          $media_items = get_attachments_by_media_tags( 'media_tags=partner&orderby=title&order=ASC' );
           if ($media_items) {
              foreach ($media_items as $media_item) {
                 echo '<a href="' . $media_item->post_excerpt . '">';
-                echo '<img src="' . wp_get_attachment_url($media_item->ID) . '" />';
+                echo '<img src="' . wp_get_attachment_url($media_item->ID) . '" alt="' . $media_item->post_excerpt . '" />';
                 echo '</a>';
              }
           }
