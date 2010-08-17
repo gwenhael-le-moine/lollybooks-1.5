@@ -53,6 +53,12 @@ div#partners {
     background: #eb3f01;
     padding: 0 1em;
 }
+div#partners h1 {
+    color:#FFF;
+    margin:0;
+    text-align:left;
+    text-decoration:underline;
+}
 
 div#respond {
     text-align: center;
@@ -106,6 +112,7 @@ div#partners a img {
     float: left;
     margin: 3px;
     }
+
 
 div#footer {
     width: 100%;
