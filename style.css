@@ -53,6 +53,12 @@ div#partners {
     background: #eb3f01;
     padding: 0 1em;
 }
+div#partners h1 {
+color:#FFF;
+margin:0;
+text-align:left;
+text-decoration:underline;
+}
 
 div#respond {
     text-align: center;
@@ -94,10 +100,22 @@ div#primary {
 
 div#partners {
     float: left;
-    width: 97%;
-    height: 160px;
+    width: 930px;
+    /* height: 160px; */
     padding: 10px;
     margin: 10px;
+    }
+div#partners div#partners_logos {
+	margin: 0 auto;
+	width: 900px
+}
+div#partners a img {
+    float: left;
+    margin: 3px;
+    }
+div#partners a {
+    width: 275px;
+    height: 184px;
     }
 
 div#footer {
@@ -164,6 +182,7 @@ div#header {
 #header #menu ul {
     /* float: right; */
     padding-left: 197px; /* same as sidebar's width */
+    /* padding-left: 74px; */ /* same as sidebar's width */
     font-size: 115%;
     font-weight: bold;
 }

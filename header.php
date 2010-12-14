@@ -28,7 +28,7 @@
           <img id="friends" src="<?php bloginfo('template_directory') ?>/images/friends.png" alt="Friends" />
           <img id="lollypops" src="<?php bloginfo('template_directory') ?>/images/lollypops.png" alt="Lollypops" />
         </div> <!-- div#icons -->
-        <div id="adress">29 Tô Hiến Thành, Hà Nội, Việt Nam</div>
+        <div id="adress">Số 18, ngõ 131, Thái Hà, Hà Nội, Việt Nam</div>
       </div>
 
       <?php sandbox_globalnav() ?>
