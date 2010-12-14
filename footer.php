@@ -1,7 +1,7 @@
     <div id="footer">
         <div id="partners">
           <h1>Our partners</h1>
-	  <div id="partners_logos">
+          <div id="partners_logos">
           <?php 
           $media_items = get_attachments_by_media_tags( 'media_tags=partner&orderby=title&order=ASC' );
           if ($media_items) {
@@ -12,9 +12,8 @@
              }
           }
           ?>
-	  </div>
+	      </div>
         </div>
-
         <span id="copyright">Copyright © 2009, 2010, Lollybooks Café</span>
     </div><!-- #footer -->
 

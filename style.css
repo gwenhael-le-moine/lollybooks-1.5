@@ -54,10 +54,10 @@ div#partners {
     padding: 0 1em;
 }
 div#partners h1 {
-color:#FFF;
-margin:0;
-text-align:left;
-text-decoration:underline;
+    color:#FFF;
+    margin:0;
+    text-align:left;
+    text-decoration:underline;
 }
 
 div#respond {
@@ -101,7 +101,6 @@ div#primary {
 div#partners {
     float: left;
     width: 930px;
-    /* height: 160px; */
     padding: 10px;
     margin: 10px;
     }

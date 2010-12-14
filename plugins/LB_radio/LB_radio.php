@@ -45,6 +45,13 @@ class LollybooksRadioWidget extends WP_Widget
         # Make the Lollybooks Radio widget
         $mp3s =& get_children( 'post_type=attachment&post_mime_type=audio/mpeg&post_parent=null' );
 
+        foreach( (array) $mp3s as $attachment_id => $attachment )
+        {
+           if ( ! preg_match("/radio.*online/i", wp_get_attachment_url( $attachment_id ) ) ) {
+              unset( $mp3s[ $attachment_id ] );
+           }
+        }
+
         $counter=sizeof( $mp3s )+1;
 
         echo "<div id=\"playradio\" style=\"height:".$height.";overflow-y:auto;overflow-x:hidden;\">";
