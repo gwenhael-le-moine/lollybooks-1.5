@@ -3,7 +3,7 @@
  * Plugin Name: Lollybooks-v3 map
  * Version: 1.0
  * Plugin URI: http://lollybooks.com
- * Description: Lollybooks online radio widget
+ * Description: Lollybooks map widget
  * Author: Gwenhael Le Moine
  * Author URI: http://cycojesus.free.fr
  */
