@@ -466,23 +466,27 @@ img {border:0}
 .posion_banner_left{
 }
 
-.recent_post{
+.recent_post,
+.widget_recent_entries{
 	margin-top:20px;
 }
 
 
-.title_Recent_Posts{
+.title_Recent_Posts,
+.widget_recent_entries .widgettitle{
 	font-size:18px;
 	color:#3c1401;
 	font-weight:bold;
 }
 
-.link_recent_post{
-	margin-top:20px;
+.link_recent_post,
+.widget_recent_entries ul li{
+	/* margin-top:20px; */
 	background:url(images/bg_link_recentpost.gif) repeat;
 }
 
-.link_recent_post a{
+.link_recent_post a,
+.widget_recent_entries ul li a{
 	background:url(images/dot_link_recent.gif) no-repeat top left;
 	line-height:22px;
 	font-size:14px;
@@ -492,7 +496,8 @@ img {border:0}
 	display:block;
 }
 
-.link_recent_post a:hover{
+.link_recent_post a:hover,
+.widget_recent_entries ul li a:hover{
 	line-height:22px;
 	font-weight:bold;
 }
