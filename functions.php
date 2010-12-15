@@ -468,6 +468,22 @@ function sandbox_widgets_init() {
 		'after_title'    =>   "</h3>\n"
 	) );
 
+	register_sidebar( array(
+                         'name' => "left-widget-area-v3",
+		'before_widget'  =>   "\n\t\t\t" . '<li id="%1$s" class="widget %2$s">',
+		'after_widget'   =>   "\n\t\t\t</li>\n",
+		'before_title'   =>   "\n\t\t\t\t". '<h3 class="widgettitle">',
+		'after_title'    =>   "</h3>\n"
+	) );
+
+	register_sidebar( array(
+                         'name' => "right-widget-area-v3",
+		'before_widget'  =>   "\n\t\t\t" . '<li id="%1$s" class="widget %2$s">',
+		'after_widget'   =>   "\n\t\t\t</li>\n",
+		'before_title'   =>   "\n\t\t\t\t". '<h3 class="widgettitle">',
+		'after_title'    =>   "</h3>\n"
+	) );
+
 	// Finished intializing Widgets plugin, now let's load the Sandbox default widgets; first, Sandbox search widget
 	$widget_ops = array(
 		'classname'    =>  'widget_search',

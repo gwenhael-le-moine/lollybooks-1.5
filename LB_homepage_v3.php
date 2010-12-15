@@ -148,7 +148,7 @@
 	// if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
 
 			<ul class="xoxo">
-				<?php if ( ! dynamic_sidebar( 'rigght-widget-area-v3' ) ) : ?>
+				<?php if ( ! dynamic_sidebar( 'right-widget-area-v3' ) ) : ?>
             <li class="widget-container">
         	  <div class="map">
             	<div class="toolTipImg" title='<img src="<?php bloginfo('template_directory'); ?>/images/image2.jpg" width="227"/><div style="background:#6A6A6A;text-align:justify; width:227px"></div>'>
@@ -157,38 +157,27 @@
               </div>
             </li>
 
-                <?php sidebarEventsCalendar();?>
-            <!-- li class="widget-container">
+            <li class="widget-container">
           	  <div class="calendar">
                 <div class="content_calendar">
                   <div class="title_calendar"><img src="<?php bloginfo('template_directory'); ?>/images/img_event.gif" width="214" height="30" /></div>
-                  <div><img src="<?php bloginfo('template_directory'); ?>/images/calendar.gif" width="214" height="131" /></div>
+                <?php sidebarEventsCalendar();?>
                 </div>
           	  </div>
-            </li -->
+            </li>
 
-                <?php sidebarEventsList( 10 );?>
-            <!-- li class="widget-container">
+            <li class="widget-container">
               <div class="calendar">
                 <div class="content_calendar">
                   <div class="title_calendar"><img src="<?php bloginfo('template_directory'); ?>/images/lichchieuphim.gif" width="214" height="30" /></div>
                   <div class="cinema">
                     <div class="content_cinema">
-                      <ul>
-                      <li>Ánh Sáng Ngoài Hành Tinh<font style="color:#c64900;">08/11/10</font></li>
-                      <li>Harry Potter và Bảo Bối Tử Thần<font style="color:#c64900;">14/11/1</font>0</li>
-                      <li>Đời Không Như Là Mơ<font style="color:#c64900;">28/11/10</font></li>
-                      <li>Kiếm Vũ<font style="color:#c64900;">11/12/10</font></li>
-                      <li>Ánh Sáng Ngoài Hành Tinh<font style="color:#c64900;">08/11/10</font></li>
-                      <li>Đời Không Như Là Mơ<font style="color:#c64900;">28/11/10</font></li>
-                      <li>Kiếm Vũ<font style="color:#c64900;">11/12/10</font></li>
-                      <li>Ánh Sáng Ngoài Hành Tinh<font style="color:#c64900;">08/11/10</font></li>
-                      </ul>
+                <?php sidebarEventsList( 10 );?>
                     </div>
                   </div>
                 </div>
               </div>
-            </li -->
+            </li>
                 
             <li class="widget-container">
               <div class="audio_books"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/audio_book.jpg" width="222" height="80"/></a></div>
