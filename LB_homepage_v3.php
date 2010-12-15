@@ -111,31 +111,6 @@
 	 */
 	if ( ! dynamic_sidebar( 'left-widget-area-v3' ) ) : ?>
 	
-            <li class="widget-container">
-              <div class="banner_left">
-            	<div id="slideshow">
-                  <img src="<?php bloginfo('template_directory'); ?>/images/image1.jpg" alt="Slideshow Image 1" class="active" width="262" height="180" />
-                  <img src="<?php bloginfo('template_directory'); ?>/images/image2.jpg" alt="Slideshow Image 2" width="262" height="180" />
-                  <img src="<?php bloginfo('template_directory'); ?>/images/image3.jpg" alt="Slideshow Image 3" width="262" height="180" />
-                  <img src="<?php bloginfo('template_directory'); ?>/images/image4.jpg" alt="Slideshow Image 4" width="262" height="180" />
-                </div>
-              </div>
-            </li>
-            <li class="widget-container">
-              <div class="recent_post">
-            	<div class="title_Recent_Posts">Recent Posts</div>
-                <div class="link_recent_post">
-                  <a href="#">Chuẩn bị gặp lại nhau ngày 11/12 trên phố Thái Hà nhé</a>
-                  <a href="#">Chuẩn bị gặp lại nhau ngày 11/12 trên phố Thái Hà nhé</a>
-                  <a href="#">Chuẩn bị gặp lại nhau ngày 11/12 trên phố Thái Hà nhé</a>
-                  <a href="#">Chuẩn bị gặp lại nhau ngày 11/12 trên phố Thái Hà nhé</a>
-                  <a href="#">Chuẩn bị gặp lại nhau ngày 11/12 trên phố Thái Hà nhé</a>
-                  <a href="#">Chuẩn bị gặp lại nhau ngày 11/12 trên phố Thái Hà nhé</a>
-                  <a href="#">Chuẩn bị gặp lại nhau ngày 11/12 trên phố Thái Hà nhé</a>
-                  <a href="#">Chuẩn bị gặp lại nhau ngày 11/12 trên phố Thái Hà nhé</a>
-                </div>
-              </div>
-            </li>
         
 		<?php endif; // end primary widget area ?>
 
@@ -145,39 +120,6 @@
         <aside class="right_content">
 			<ul class="xoxo">
 				<?php if ( ! dynamic_sidebar( 'right-widget-area-v3' ) ) : ?>
-            <li class="widget-container">
-        	  <div class="map">
-            	<div class="toolTipImg" title='<img src="<?php bloginfo('template_directory'); ?>/images/image2.jpg" width="227"/><div style="background:#6A6A6A;text-align:justify; width:227px"></div>'>
-                  <a href="#"><img  src="<?php bloginfo('template_directory'); ?>/images/map.jpg" /></a>
-                </div>
-              </div>
-            </li>
-
-            <li class="widget-container">
-          	  <div class="calendar">
-                <div class="content_calendar">
-                  <div class="title_calendar"><img src="<?php bloginfo('template_directory'); ?>/images/img_event.gif" width="214" height="30" /></div>
-                <?php sidebarEventsCalendar();?>
-                </div>
-          	  </div>
-            </li>
-
-            <li class="widget-container">
-              <div class="calendar">
-                <div class="content_calendar">
-                  <div class="title_calendar"><img src="<?php bloginfo('template_directory'); ?>/images/lichchieuphim.gif" width="214" height="30" /></div>
-                  <div class="cinema">
-                    <div class="content_cinema">
-                <?php sidebarEventsList( 10 );?>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-                
-            <li class="widget-container">
-              <div class="audio_books"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/audio_book.jpg" width="222" height="80"/></a></div>
-            </li>
 
                 <?php endif; ?>
           </ul>
