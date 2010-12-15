@@ -144,9 +144,6 @@
 
         <aside class="right_content">
 <?php
-	// A second sidebar for widgets, just because.
-	// if ( is_active_sidebar( 'secondary-widget-area' ) ) : ?>
-
 			<ul class="xoxo">
 				<?php if ( ! dynamic_sidebar( 'right-widget-area-v3' ) ) : ?>
             <li class="widget-container">
@@ -183,8 +180,7 @@
               <div class="audio_books"><a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/audio_book.jpg" width="222" height="80"/></a></div>
             </li>
 
-                <?php // endif;
-            endif; ?>
+                <?php endif; ?>
           </ul>
         </aside>
 

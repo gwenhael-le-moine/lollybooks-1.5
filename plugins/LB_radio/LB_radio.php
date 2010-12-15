@@ -54,6 +54,8 @@ class LollybooksRadioWidget extends WP_Widget
 
       $counter=sizeof( $mp3s )+1;
 
+      echo plugin_basename();
+      
       echo "<div id=\"playradio\" style=\"height:".$height.";overflow-y:auto;overflow-x:hidden;\">";
       foreach( (array) $mp3s as $attachment_id => $attachment )
       {
