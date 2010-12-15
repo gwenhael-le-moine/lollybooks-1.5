@@ -8,8 +8,8 @@
  * Author URI: http://cycojesus.free.fr
  */
 
-define('PLUGINURL', get_option('siteurl').'/wp-content/plugins/LB_radio_v3');
-define('PLUGINIMAGESURL', PLUGINURL.'/images');
+define('LBRADIOV3URL', get_option('siteurl').'/wp-content/plugins/LB_radio_v3');
+define('LBRADIOV3IMAGESURL', PLUGINURL.'/images');
 function LollybooksRadioV3_init() {
    if (!is_admin()) {
       wp_enqueue_script('jquery');
@@ -56,7 +56,7 @@ class LollybooksRadioV3Widget extends WP_Widget
 
       $counter=sizeof( $mp3s );
 
-      echo "<div id=\"playradio\" style=\"height:80px;width:222px;background:url(".PLUGINIMAGESURL."/background.jpg);\">";
+      echo "<div id=\"playradio\" style=\"height:80px;width:222px;background:url(".LBRADIOV3IMAGESURL."/background.jpg);\">";
       foreach( (array) $mp3s as $attachment_id => $attachment )
       {
          echo "<a href='".wp_get_attachment_url( $attachment_id )."' style='padding:10px;'>Volume " .$counter. "</a><br />";
