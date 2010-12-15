@@ -9,7 +9,7 @@
  */
 
 define('LBRADIOV3URL', get_option('siteurl').'/wp-content/plugins/LB_radio_v3');
-define('LBRADIOV3IMAGESURL', PLUGINURL.'/images');
+define('LBRADIOV3IMAGESURL', LBRADIOV3URL.'/images');
 function LollybooksRadioV3_init() {
    if (!is_admin()) {
       wp_enqueue_script('jquery');
