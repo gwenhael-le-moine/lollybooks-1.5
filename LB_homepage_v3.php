@@ -143,7 +143,6 @@
         </aside>
 
         <aside class="right_content">
-<?php
 			<ul class="xoxo">
 				<?php if ( ! dynamic_sidebar( 'right-widget-area-v3' ) ) : ?>
             <li class="widget-container">
