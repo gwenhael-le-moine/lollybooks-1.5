@@ -736,3 +736,6 @@ li {list-style:none}
 /* Event Calendar plugin */
 .calendar caption { color:#3c1401;
                  background-color:#f2e4c7}
+
+/* radio v3 plugin */
+#playradio .wpaudio-container{padding-left:14px;padding-top:17px}
