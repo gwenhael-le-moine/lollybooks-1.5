@@ -36,15 +36,11 @@ class LollybooksSlideshowWidget extends WP_Widget
     */
    function widget($args, $instance){
       extract($args);
-      $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
       $mediatag = apply_filters('widget_mediatag', empty($instance['mediatag']) ? '&nbsp;' : $instance['mediatag']);
 
       # Before the widget
       echo $before_widget;
 
-      # The title
-      if ( $title )
-         echo $before_title . $title . $after_title;
 ?>
       <style src="<?php echo LBSLIDESHOWURL ?>/css/slideshow.css"></style>
       <div class="banner_left">
@@ -72,7 +68,6 @@ class LollybooksSlideshowWidget extends WP_Widget
     */
    function update($new_instance, $old_instance){
       $instance = $old_instance;
-      $instance['title'] = strip_tags(stripslashes($new_instance['title']));
       $instance['mediatag'] = strip_tags(stripslashes($new_instance['mediatag']));
 
       return $instance;
@@ -84,13 +79,11 @@ class LollybooksSlideshowWidget extends WP_Widget
     */
    function form($instance){
       //Defaults
-      $instance = wp_parse_args( (array) $instance, array('title'=>'', 'mediatag'=>'slideshow') );
+      $instance = wp_parse_args( (array) $instance, array('mediatag'=>'slideshow') );
 
-      $title = htmlspecialchars($instance['title']);
       $mediatag = htmlspecialchars($instance['mediatag']);
 
       # Output the options
-      echo '<p style="text-align:right;"><label for="' . $this->get_field_name('title') . '">' . __('Title:') . ' <input style="width: 250px;" id="' . $this->get_field_id('title') . '" name="' . $this->get_field_name('title') . '" type="text" value="' . $title . '" /></label></p>';
       echo '<p style="text-align:right;"><label for="' . $this->get_field_name('mediatag') . '">' . __('Mediatag:') . ' <input style="width: 250px;" id="' . $this->get_field_id('mediatag') . '" name="' . $this->get_field_name('mediatag') . '" type="text" value="' . $mediatag . '" /></label></p>';
    }
 
