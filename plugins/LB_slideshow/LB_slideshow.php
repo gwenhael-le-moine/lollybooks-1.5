@@ -37,6 +37,7 @@ class LollybooksSlideshowWidget extends WP_Widget
    function widget($args, $instance){
       extract($args);
       $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
+      $mediatag = apply_filters('widget_mediatag', empty($instance['mediatag']) ? '&nbsp;' : $instance['mediatag']);
 
       # Before the widget
       echo $before_widget;
@@ -49,7 +50,8 @@ class LollybooksSlideshowWidget extends WP_Widget
       <div class="banner_left">
           <div id="slideshow">
 <?php
-      $media_items = get_attachments_by_media_tags( 'media_tags=slideshow&orderby=title&order=ASC' ); // FIXME: parametrable tag
+          if ( ! $mediatag ) { $mediatag = 'slideshow'; }
+      $media_items = get_attachments_by_media_tags( 'media_tags='.$mediatag.'&orderby=title&order=ASC' ); // FIXME: parametrable tag
       if ($media_items) {
          foreach ($media_items as $media_item) {
             echo '<img src="' . wp_get_attachment_url($media_item->ID) . '" width="262" height="180" />';
@@ -71,6 +73,7 @@ class LollybooksSlideshowWidget extends WP_Widget
    function update($new_instance, $old_instance){
       $instance = $old_instance;
       $instance['title'] = strip_tags(stripslashes($new_instance['title']));
+      $instance['mediatag'] = strip_tags(stripslashes($new_instance['mediatag']));
 
       return $instance;
    }
@@ -81,13 +84,14 @@ class LollybooksSlideshowWidget extends WP_Widget
     */
    function form($instance){
       //Defaults
-      $instance = wp_parse_args( (array) $instance, array('title'=>'') );
+      $instance = wp_parse_args( (array) $instance, array('title'=>'', 'mediatag'=>'slideshow') );
 
       $title = htmlspecialchars($instance['title']);
+      $mediatag = htmlspecialchars($instance['mediatag']);
 
       # Output the options
       echo '<p style="text-align:right;"><label for="' . $this->get_field_name('title') . '">' . __('Title:') . ' <input style="width: 250px;" id="' . $this->get_field_id('title') . '" name="' . $this->get_field_name('title') . '" type="text" value="' . $title . '" /></label></p>';
-
+      echo '<p style="text-align:right;"><label for="' . $this->get_field_name('mediatag') . '">' . __('Mediatag:') . ' <input style="width: 250px;" id="' . $this->get_field_id('mediatag') . '" name="' . $this->get_field_name('mediatag') . '" type="text" value="' . $mediatag . '" /></label></p>';
    }
 
 }// END class
