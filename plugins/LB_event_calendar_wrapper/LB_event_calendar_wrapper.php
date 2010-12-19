@@ -16,7 +16,7 @@ function LollybooksV3ECW_init() {
       wp_enqueue_script('jquery');
    }
 }
-add_action('init', 'my_init');
+add_action('init', 'LollybooksV3ECW_init');
 
 class LollybooksV3ECWWidget extends WP_Widget
 {

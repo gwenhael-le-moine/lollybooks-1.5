@@ -16,7 +16,7 @@ function LollybooksSlideshow_init() {
       wp_enqueue_script('jquery');
    }
 }
-add_action('init', 'my_init');
+add_action('init', 'LollybooksSlideshow_init');
 
 class LollybooksSlideshowWidget extends WP_Widget
 {

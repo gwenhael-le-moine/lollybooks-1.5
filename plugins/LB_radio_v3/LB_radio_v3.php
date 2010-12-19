@@ -15,7 +15,7 @@ function LollybooksRadioV3_init() {
       wp_enqueue_script('jquery');
    }
 }
-add_action('init', 'my_init');
+add_action('init', 'LollybooksRadioV3_init');
 
 class LollybooksRadioV3Widget extends WP_Widget
 {

@@ -7,12 +7,12 @@
  * Author: Gwenhael Le Moine
  * Author URI: http://cycojesus.free.fr
  */
-function my_init() {
+function LollybooksRadio_init() {
    if (!is_admin()) {
       wp_enqueue_script('jquery');
    }
 }
-add_action('init', 'my_init');
+add_action('init', 'LollybooksRadio_init');
 
 class LollybooksRadioWidget extends WP_Widget
 {
