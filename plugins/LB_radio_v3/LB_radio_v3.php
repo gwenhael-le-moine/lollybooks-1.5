@@ -50,7 +50,7 @@ class LollybooksRadioV3Widget extends WP_Widget
       $counter=sizeof( $mp3s );
 ?>
     <li class="widget-container">
-      <div id="playradio" style="height:80px;width:222px;background:url(<?php echo LBRADIOV3IMAGESURL; ?>/background.jpg);">
+      <div id="playradio" style="height:80px;width:222px;margin-left:3px;background:url(<?php echo LBRADIOV3IMAGESURL; ?>/background.jpg);">
 <?php
       foreach( (array) $mp3s as $attachment_id => $attachment )
       {
