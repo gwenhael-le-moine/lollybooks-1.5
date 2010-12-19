@@ -404,6 +404,10 @@ Verdana, Tahoma, Geneva, sans-serif - t
 
 /* Lolllybooks Café CSS */
 /* CSS Document */
+.center {
+    display:block;
+    width:50%;
+    margin:0 auto}
 
 body{
 	background:url(images/bg_banner.jpg) top repeat-x #f9ebce;
@@ -436,7 +440,8 @@ img {border:0}
 /* #content{padding-top:79px} */
 .content{
 	background:url(images/bg_content.jpg) no-repeat center top;
-	padding-top:60px;
+	/* padding-top:60px; */
+	padding-top:22px;
     margin-top:2px;
 }
 
@@ -445,7 +450,7 @@ img {border:0}
 	margin:auto;
 	overflow:hidden;
 /* Gwh */
-    height:646px;
+    height:700px;
     padding-bottom:33px;
     border-bottom:1px #ddd solid;
 }
@@ -690,12 +695,18 @@ z-index:2000;
 }
 
 /* Gwh */
+#contact{padding-bottom:22px}
+#contact, #contact span {font-family:sans-serif;
+                         font-size:120%;
+                         text-align:center;
+                         width:100%}
+
 /* mini-reset for aside's widgets */
-ul {
-    margin:0;
+ul {margin:0;
     padding:0;
     border:0}
 li {list-style:none}
+.widget-container{padding-bottom:10px}
 
 /* Slideshow */
 /*** set the width and height to match your images **/
