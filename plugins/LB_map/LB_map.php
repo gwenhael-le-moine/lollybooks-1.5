@@ -32,7 +32,9 @@ class LollybooksMapWidget extends WP_Widget
       echo $before_widget;
 
 ?>
-      <div style="height:159px;width:227px;"><img src="<?php echo LBMAPV3IMAGESURL; ?>/map.jpg" /></div>
+      <li class="widget-container">
+           <div style="height:159px;width:227px;"><img src="<?php echo LBMAPV3IMAGESURL; ?>/map.jpg" /></div>
+      </li>
 <?php
       # After the widget
       echo $after_widget;
