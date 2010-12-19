@@ -538,7 +538,8 @@ img {border:0}
     overflow:auto;
 }
 
-.link_post_center{ float:right;}
+.link_post_center{float:right;
+                 padding-right:60px}
 
 .link_post_center a{
 	font-size:12px;
