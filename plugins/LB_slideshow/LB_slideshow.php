@@ -48,10 +48,14 @@ class LollybooksSlideshowWidget extends WP_Widget
       <style src="<?php echo LBSLIDESHOWURL ?>/css/slideshow.css"></style>
                     <div class="banner_left">
       <div id="slideshow">
-      <img src="<?php echo LBSLIDESHOWIMAGESURL ?>/image1.jpg" alt="Slideshow Image 1" class="active" width="262" height="180" />
-      <img src="<?php echo LBSLIDESHOWIMAGESURL ?>/image2.jpg" alt="Slideshow Image 2" width="262" height="180" />
-      <img src="<?php echo LBSLIDESHOWIMAGESURL ?>/image3.jpg" alt="Slideshow Image 3" width="262" height="180" />
-      <img src="<?php echo LBSLIDESHOWIMAGESURL ?>/image4.jpg" alt="Slideshow Image 4" width="262" height="180" />
+<?php
+      $media_items = get_attachments_by_media_tags( 'media_tags=slideshow&orderby=title&order=ASC' ); // FIXME: parametrable tag
+      if ($media_items) {
+         foreach ($media_items as $media_item) {
+            echo '<img src="' . wp_get_attachment_url($media_item->ID) . '" width="262" height="180" />';
+         }
+      }
+?>
       </div>
       </div>
       <script src="<?php echo LBSLIDESHOWURL ?>/js/launch.js"></script>
