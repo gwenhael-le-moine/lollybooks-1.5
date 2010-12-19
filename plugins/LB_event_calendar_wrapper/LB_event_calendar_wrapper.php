@@ -11,13 +11,6 @@
 define('LBV3ECWURL', get_option('siteurl').'/wp-content/plugins/LB_event_calendar_wrapper');
 define('LBV3ECWIMAGESURL', LBV3ECWURL.'/images');
 
-function LollybooksV3ECW_init() {
-   if (!is_admin()) {
-      wp_enqueue_script('jquery');
-   }
-}
-add_action('init', 'LollybooksV3ECW_init');
-
 class LollybooksV3ECWWidget extends WP_Widget
 {
    /**
@@ -44,27 +37,27 @@ class LollybooksV3ECWWidget extends WP_Widget
       # The title
       if ( $title )
          echo $before_title . $title . $after_title;
-
-      echo "          	  <div class=\"calendar\">
-                <div class=\"content_calendar\">
-                  <div class=\"title_calendar\"><img src=\"".LBV3ECWIMAGESURL."/img_event.gif\" width=\"214\" height=\"30\" /></div>";
-                 sidebarEventsCalendar();
-echo "                </div>
+?>
+<div class="calendar">
+                <div class="content_calendar">
+                  <div class="title_calendar"><img src="<?php echo LBV3ECWIMAGESURL;?>/img_event.gif" width="214" height="30" /></div>
+<?php sidebarEventsCalendar(); ?>
+                </div>
           	  </div>
             </li>
 
-            <li class=\"widget-container\">
-              <div class=\"calendar\">
-                <div class=\"content_calendar\">
-                  <div class=\"title_calendar\"><img src=\"".LBV3ECWIMAGESURL."/lichchieuphim.gif\" width=\"214\" height=\"30\" /></div>
-                  <div class=\"cinema\">
-                    <div class=\"content_cinema\">";
-                 sidebarEventsList( 10 );
-echo "                    </div>
+            <li class="widget-container">
+              <div class="calendar">
+                <div class="content_calendar">
+                  <div class="title_calendar"><img src="<?php echo LBV3ECWIMAGESURL;?>/lichchieuphim.gif" width="214" height="30" /></div>
+                  <div class="cinema">
+                    <div class="content_cinema">
+<?php sidebarEventsList( 10 ); ?>
+                    </div>
                   </div>
                 </div>
               </div>
-";
+<?php
       # After the widget
       echo $after_widget;
    }
