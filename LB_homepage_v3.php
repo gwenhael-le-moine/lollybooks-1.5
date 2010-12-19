@@ -83,51 +83,44 @@
     </nav>
     <!--/menutop-->
 
-    <section id="content" role="main">
            <div class="content">
              <div class="content_in" >
 
-
-
-
-
-
-           __CONTENT GOES HERE__
-
-
-
-
-
-           
-        <!--left_content-->
     	<aside class="left_content">
           <ul class="xoxo">
-        
-<?php
-	/* When we call the dynamic_sidebar() function, it'll spit out
-	 * the widgets for that widget area. If it instead returns false,
-	 * then the sidebar simply doesn't exist, so we'll hard-code in
-	 * some default sidebar stuff just in case.
-	 */
-	if ( ! dynamic_sidebar( 'left-widget-area-v3' ) ) : ?>
-	
-        
-		<?php endif; // end primary widget area ?>
-
+            <?php if ( ! dynamic_sidebar( 'left-widget-area-v3' ) ) :
+            endif; ?>
           </ul>
-        </aside>
+        </aside> <!-- left_content -->
 
         <aside class="right_content">
 			<ul class="xoxo">
-				<?php if ( ! dynamic_sidebar( 'right-widget-area-v3' ) ) : ?>
-
-                <?php endif; ?>
+				<?php if ( ! dynamic_sidebar( 'right-widget-area-v3' ) ) :
+                endif; ?>
           </ul>
-        </aside>
+        </aside> <!-- right_content -->
+
+    <section id="content" class="middle_content" role="main">
+<?php
+           get_posts( array( 'numberposts' => 1, 'tag' => 'homepage', 'orderby' => 'post_date', ) );
+   while (have_posts()) : the_post();
+?>
+<article id="post-1" class="post-1 post type-post hentry category-uncategorized">
+      <h1 class="entry-title"><a href="<?php post_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+      
+      <div class="entry-content">
+      <?php the_content(); ?>
+      </div><!-- .entry-content -->
+	  
+      <p class="link_post_center"><a href="<?php post_permalink(); ?>">Xem chi tiết ...</a></p>
+</article>
+<?php
+   endwhile;
+?>
+		</section><!-- #main -->
 
            </div> <!-- .content_in -->
            </div> <!-- .content -->
-		</section><!-- #main -->
 
         <hr class="frise"/>
 
