@@ -28,46 +28,14 @@ class LollybooksMapWidget extends WP_Widget
     *
     */
    function widget($args, $instance){
-      extract($args);
-      $title = apply_filters('widget_title', empty($instance['title']) ? '&nbsp;' : $instance['title']);
-
       # Before the widget
       echo $before_widget;
 
-      # The title
-      if ( $title )
-         echo $before_title . $title . $after_title;
 ?>
       <div style="height:159px;width:227px;"><img src="<?php echo LBMAPV3IMAGESURL; ?>/map.jpg" /></div>
 <?php
       # After the widget
       echo $after_widget;
-   }
-
-   /**
-    * Saves the widgets settings.
-    *
-    */
-   function update($new_instance, $old_instance){
-      $instance = $old_instance;
-      $instance['title'] = strip_tags(stripslashes($new_instance['title']));
-
-      return $instance;
-   }
-
-   /**
-    * Creates the edit form for the widget.
-    *
-    */
-   function form($instance){
-      //Defaults
-      $instance = wp_parse_args( (array) $instance, array('title'=>'') );
-
-      $title = htmlspecialchars($instance['title']);
-
-      # Output the options
-      echo '<p style="text-align:right;"><label for="' . $this->get_field_name('title') . '">' . __('Title:') . ' <input style="width: 250px;" id="' . $this->get_field_id('title') . '" name="' . $this->get_field_name('title') . '" type="text" value="' . $title . '" /></label></p>';
-
    }
 
 }// END class
