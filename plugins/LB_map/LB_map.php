@@ -11,13 +11,6 @@
 define('LBMAPV3URL', get_option('siteurl').'/wp-content/plugins/LB_map');
 define('LBMAPV3IMAGESURL', LBMAPV3URL.'/images');
 
-function LollybooksMap_init() {
-   if (!is_admin()) {
-      wp_enqueue_script('jquery');
-   }
-}
-add_action('init', 'LollybooksMap_init');
-
 class LollybooksMapWidget extends WP_Widget
 {
    /**
@@ -44,9 +37,9 @@ class LollybooksMapWidget extends WP_Widget
       # The title
       if ( $title )
          echo $before_title . $title . $after_title;
-
-      echo "<div style=\"height:159px;width:227px;\"><img src=\"".LBMAPV3IMAGESURL."/map.jpg\" /></div>";
-
+?>
+      <div style="height:159px;width:227px;"><img src="<?php echo LBMAPV3IMAGESURL; ?>/map.jpg" /></div>
+<?php
       # After the widget
       echo $after_widget;
    }
