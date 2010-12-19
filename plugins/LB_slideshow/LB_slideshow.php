@@ -54,7 +54,7 @@ class LollybooksSlideshowWidget extends WP_Widget
          }
       }
 ?>
-          </div>>
+          </div>
       </div>
       <script src="<?php echo LBSLIDESHOWURL ?>/js/launch.js"></script>
 <?php
