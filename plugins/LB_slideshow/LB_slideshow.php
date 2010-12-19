@@ -46,8 +46,8 @@ class LollybooksSlideshowWidget extends WP_Widget
          echo $before_title . $title . $after_title;
 ?>
       <style src="<?php echo LBSLIDESHOWURL ?>/css/slideshow.css"></style>
-                    <div class="banner_left">
-      <div id="slideshow">
+      <div class="banner_left">
+          <div id="slideshow">
 <?php
       $media_items = get_attachments_by_media_tags( 'media_tags=slideshow&orderby=title&order=ASC' ); // FIXME: parametrable tag
       if ($media_items) {
@@ -56,7 +56,7 @@ class LollybooksSlideshowWidget extends WP_Widget
          }
       }
 ?>
-      </div>
+          </div>>
       </div>
       <script src="<?php echo LBSLIDESHOWURL ?>/js/launch.js"></script>
 <?php
