@@ -424,6 +424,7 @@ img {border:0}
 /* Gwh */
 .menu-item {float:left}
 .menutop{
+	background:url(images/bg_banner.jpg) bottom repeat-x #f9ebce; /* this for Chrome (at least)*/
 	margin:auto;
 	width:1000px;
     height:79px;
