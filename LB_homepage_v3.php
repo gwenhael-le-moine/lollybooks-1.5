@@ -91,7 +91,7 @@
         ~
         <a href="http://facebook.com/lollybooks"><img src="<?php bloginfo('template_directory'); ?>/images/facebook_favicon.ico" height="12px" width="12px" /> http://facebook.com/lollybooks</a>
         ~
-        ✉ <a href="mailto:info@lollybooks.com">info@lollybooks.com</a>
+        <a href="mailto:info@lollybooks.com">✉ info@lollybooks.com</a>
         ~
         ℡ 04.6276.8545 - 0977.910.727 - 0988.172.298
       </span>
