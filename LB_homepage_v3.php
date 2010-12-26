@@ -113,17 +113,17 @@
 
     <section id="content" class="middle_content" role="main">
 <?php
-           get_posts( array( 'numberposts' => 1, 'tag' => 'homepage', 'orderby' => 'post_date', ) );
+           query_posts( array( 'numberposts' => 1, 'tag' => 'homepage', 'orderby' => 'post_date', ) );
    while (have_posts()) : the_post();
 ?>
-<article id="post-1" class="post-1 post type-post hentry category-uncategorized">
-      <h1 class="entry-title"><a href="<?php post_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
-      
+<article>
+      <h1 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+
       <div class="entry-content">
       <?php the_content(); ?>
       </div><!-- .entry-content -->
-	  
-      <p class="link_post_center"><a href="<?php post_permalink(); ?>">Xem chi tiết ...</a></p>
+
+      <p class="link_post_center"><a href="<?php the_permalink(); ?>">Xem chi tiết ...</a></p>
 </article>
 <?php
    endwhile;
