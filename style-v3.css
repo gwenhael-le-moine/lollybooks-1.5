@@ -437,6 +437,8 @@ img {border:0}
     vertical-align:bottom;
 }
 
+.entry-content{font-size:120%}
+
 /**********content**********/
 /* #content{padding-top:79px} */
 .content{
