@@ -566,13 +566,12 @@ img {border:0}
     margin-right:19px;
 }
 
-.calendar{
-	margin-top:10px;
+.calendar, .sidebar#primary{
     /* Gwh */
     border:1px rgb(161,135,125) solid;
     background-color:rgb(242,228,199);
     padding:4px;
-    width:215px;
+
     /* css3 */
     border-radius:7px;
     -webkit-border-radius:7px;
@@ -584,6 +583,9 @@ img {border:0}
     filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='gray'); /* IE */
     -ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0, OffY=1, Color='gray')"; /* IE8 */ 
 }
+.calendar{
+	margin-top:10px;
+    width:215px}
 
 .title_calendar {height:30px}
 
