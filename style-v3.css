@@ -456,7 +456,7 @@ img {border:0}
     border-bottom:1px #ddd solid;
 }
 
-.left_content, .sidebar#primary{
+.left_content{
 	width:296px;
 	float:left;
 }
@@ -508,7 +508,7 @@ img {border:0}
 	font-weight:bold;
 }
 
-#container{width:647px;float:right}
+#container{width:714px;float:right}
 
 .middle_content{
 	background:url(images/text_post.jpg) no-repeat;
@@ -586,7 +586,10 @@ img {border:0}
 .calendar{
 	margin-top:10px;
     width:215px}
-
+.sidebar#primary{
+	width:229px;
+	float:left;
+}
 .title_calendar {height:30px}
 
 .content_calendar{
@@ -745,7 +748,7 @@ li {list-style:none}
 
 /* Event Calendar plugin */
 .calendar caption { color:#3c1401;
-                 background-color:#f2e4c7}
+                    background-color:#f2e4c7}
 
 /* radio v3 plugin */
 #playradio .wpaudio-container{position:relative;left:23px;top:17px}

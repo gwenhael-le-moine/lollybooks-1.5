@@ -57,7 +57,7 @@
 	        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/home.jpg" width="80" height="78"/></a>
           </li>
           <li class="menu-item">
-            <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/about_us.jpg"/></a>
+            <a href="<?php bloginfo('home'); ?>/gioi-thieu"><img src="<?php bloginfo('template_directory'); ?>/images/about_us.jpg"/></a>
           </li>
           <li class="menu-item">
             <a href="#"><img src="<?php bloginfo('template_directory'); ?>/images/services.jpg" /></a>
