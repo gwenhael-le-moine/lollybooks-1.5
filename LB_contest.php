@@ -8,6 +8,7 @@
 <div id="container" class="contest">
   <div id="content">
 
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     <h2 class="entry-title"><?php the_title() ?></h2>
 
     <div id="intro">
@@ -26,7 +27,7 @@
     <?php
     }
     ?>
-
+<?php endwhile; ?>
 
   </div><!-- #content -->
 </div><!-- #container -->

@@ -12,6 +12,7 @@
       <div class="nav-previous"><a href="javascript:history.back(  );">Back to main page</a></div>
     </div -->
 
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     <div id="intro">
 
 			<div id="post-<?php the_ID() ?>" class="<?php sandbox_post_class() ?>">
@@ -38,7 +39,7 @@
   <?php echo $children; ?>
   </ul>
   <?php } ?>
-
+<?php endwhile; ?>
   </div><!-- #content -->
 </div><!-- #container -->
 
