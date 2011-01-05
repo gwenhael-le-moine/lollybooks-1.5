@@ -567,7 +567,8 @@ img {border:0}
 
 .calendar,
 .sidebar#primary,
-.contest #submissions{
+.contest #submissions,
+.contest-entry #submissions{
     /* Gwh */
     border:1px rgb(161,135,125) solid;
     background-color:rgb(242,228,199);
@@ -756,13 +757,18 @@ li {list-style:none}
 
 
 /* parent pages */
+.contest-entry .entry-title,
 .contest .entry-title{font-size:xx-large;
                       text-align:center;
                       padding-right:27%}
+.contest-entry .entry-title{padding:0}
 
+.contest-entry #intro,
 .contest #intro{float:left;
                 width:70%}
 
+.contest-entry #submissions,
 .contest #submissions{float:right;
                       width:25%}
+.contest-entry #submissions li,
 .contest #submissions li{list-style:disc inside}
