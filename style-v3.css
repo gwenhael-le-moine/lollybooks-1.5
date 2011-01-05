@@ -756,6 +756,10 @@ li {list-style:none}
 
 
 /* parent pages */
+.contest .entry-title{font-size:xx-large;
+                      text-align:center;
+                      padding-right:27%}
+
 .contest #intro{float:left;
                 width:70%}
 
