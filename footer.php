@@ -16,46 +16,56 @@
           <ul>
             <li>
               <div class="box_footer1">
+           <a href="#">
        	        <img src="<?php bloginfo('template_directory'); ?>/images/img_footer1.gif" width="67" height="76" />
                 <h3>
-                  <a href="#">Cảm nhận phim,Cảm nhận sách</a>
+                  Cảm nhận phim,Cảm nhận sách
                   <p>Có gì mới tại Lollybooks Café?</p>
                 </h3>
+           </a>
               </div>
             </li>
             <li>
               <div class="box_footer1">
+           <a href="#">
        	        <img src="<?php bloginfo('template_directory'); ?>/images/img_footer2.gif" width="67" height="76" />
                 <h3>
-                  <a href="#">Đời sống giới trẻ</a>
+                  Đời sống giới trẻ
                   <p>Có gì mới tại Lollybooks Café?</p>
                 </h3>
+           </a>
               </div>
             </li>
             <li>
               <div class="box_footer1">
+           <a href="<?php bloginfo('home'); ?>/blog">
        	        <img src="<?php bloginfo('template_directory'); ?>/images/img_footer3.gif" width="67" height="76" />
                 <h3>
-                  <a href="#">Blog</a>
+                  Blog
                   <p>Có gì mới tại Lollybooks Café?</p>
                 </h3>
+           </a>
               </div>
             </li>
             <li>
               <div class="box_footer1">
+           <a href="#">
        	        <img src="<?php bloginfo('template_directory'); ?>/images/img_footer4.gif" width="67" height="76" />
                 <h3>
-                  <a href="#">Đối tác</a>
+                  Đối tác
                   <p>Có gì mới tại Lollybooks Café?</p>
                 </h3>
+           </a>
               </div>
               
               <div class="box_footer1">
+           <a href="#">
        	        <img src="<?php bloginfo('template_directory'); ?>/images/img_footer5.gif" width="67" height="76" />
                 <h3>
-                  <a href="#">Liên hệ</a>
+                  Liên hệ
                   <p>Có gì mới tại Lollybooks Café?</p>
                 </h3>
+           </a>
               </div>
             </li>
           </ul>
