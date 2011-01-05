@@ -756,6 +756,9 @@ li {list-style:none}
 
 
 /* parent pages */
+.contest #intro{float:left;
+                width:70%}
+
 .contest #submissions{float:right;
                       width:25%}
 .contest #submissions li{list-style:disc inside}
