@@ -531,7 +531,6 @@ img {border:0}
 	font-weight:bold;
     text-decoration:none;
 	margin-top:30px;
-	
 }
 
 .middle_content .entry-content {
@@ -566,7 +565,9 @@ img {border:0}
     margin-right:19px;
 }
 
-.calendar, .sidebar#primary{
+.calendar,
+.sidebar#primary,
+.contest #submissions{
     /* Gwh */
     border:1px rgb(161,135,125) solid;
     background-color:rgb(242,228,199);
@@ -752,3 +753,9 @@ li {list-style:none}
 
 /* radio v3 plugin */
 #playradio .wpaudio-container{position:relative;left:23px;top:17px}
+
+
+/* parent pages */
+.contest #submissions{float:right;
+                      width:25%}
+.contest #submissions li{list-style:disc inside}
