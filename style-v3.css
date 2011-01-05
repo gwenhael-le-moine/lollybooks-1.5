@@ -665,13 +665,17 @@ footer{
 	text-align:left;
 }
 
-.box_footer1 h3 a{
+.box_footer1 a{
 	text-decoration:none;
 	font-weight:bold;
 	color:#dac8a2;
 	font-size:12px;
 	font-family:Arial, Helvetica, sans-serif;
 }
+
+.box_footer1 a:hover{
+    color:#eb3f01;
+    text-decoration:underline}
 
 .box_footer1 p{
 	font-weight: normal;
