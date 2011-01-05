@@ -456,7 +456,7 @@ img {border:0}
     border-bottom:1px #ddd solid;
 }
 
-.left_content{
+.left_content, .sidebar#primary{
 	width:296px;
 	float:left;
 }
@@ -507,6 +507,8 @@ img {border:0}
 	line-height:22px;
 	font-weight:bold;
 }
+
+#container{width:647px;float:right}
 
 .middle_content{
 	background:url(images/text_post.jpg) no-repeat;
