@@ -20,6 +20,21 @@
 			wp_title( '|', true, 'right' );
 		      ?>
     </title>
+
+    <!-- We put all javascript hereso that DOM is loaded when JS is called -->
+    <script src="<?php bloginfo('template_directory'); ?>/js/jquerycurvycorners/jquery-1.3.2.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <!-- http://plugins.jquery.com/project/maphilight -->
+    <script src="<?php bloginfo('template_directory'); ?>/js/maphilight/jquery.maphilight.min.js"></script>
+    <!-- http://code.google.com/p/jquerycurvycorners/ -->
+    <script src="<?php bloginfo('template_directory'); ?>/js/jquerycurvycorners/jquery.curvycorners.packed.js"></script>
+    <script>
+$(function() {
+   // start maphilight plugin
+   $('img[usemap]').maphilight();
+});
+	</script>
+
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); /*bloginfo( 'stylesheet_url' );*/ ?>/style-v3.css" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -212,19 +227,6 @@
 	 */
 	wp_footer();
 ?>
-    <!-- We put all javascript hereso that DOM is loaded when JS is called -->
-    <script src="<?php bloginfo('template_directory'); ?>/js/jquerycurvycorners/jquery-1.3.2.min.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <!-- http://plugins.jquery.com/project/maphilight -->
-    <script src="<?php bloginfo('template_directory'); ?>/js/maphilight/jquery.maphilight.min.js"></script>
-    <!-- http://code.google.com/p/jquerycurvycorners/ -->
-    <script src="<?php bloginfo('template_directory'); ?>/js/jquerycurvycorners/jquery.curvycorners.packed.js"></script>
-    <script>
-$(function() {
-   // start maphilight plugin
-   $('img[usemap]').maphilight();
-});
-	</script>
   </body>
 </html>
 
